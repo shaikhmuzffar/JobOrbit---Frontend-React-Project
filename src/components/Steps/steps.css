@@ -1,0 +1,88 @@
+.stepsSection {
+    margin-block: 8rem;
+}
+
+.steps {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    row-gap: 2rem;
+}
+
+/*------- step -------- */
+.step {
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    text-align: center;
+}
+
+/* stepIcon */
+.stepIcon {
+    position: relative;
+    width: fit-content;
+}
+
+.polygon {
+    height: 5rem;
+    width: 5rem;
+    border-radius: 30px;
+    transform: rotate(45deg);
+    background-color: #1da0f21f;
+}
+
+/* polygon colors */
+.step:nth-child(1) .polygon {
+    background-color: #1da0f21f;
+}
+
+.step:nth-child(2) .polygon {
+    background-color: #ff8f661f;
+}
+
+.step:nth-child(3) .polygon {
+    background-color: #55bc7e1f;
+}
+
+.step:nth-child(4) .polygon {
+    background-color: #9f91cc1f;
+}
+
+.stepIcon>i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.3rem;
+}
+
+/* icon colors */
+.step:nth-child(1) .stepIcon i {
+    color: #1DA1F2;
+}
+
+.step:nth-child(2) .stepIcon i {
+    color: #ff9066;
+}
+
+.step:nth-child(3) .stepIcon i {
+    color: #55BC7E;
+}
+
+.step:nth-child(4) .stepIcon i {
+    color: #9F91CC;
+}
+
+/* stepTitle */
+.stepTitle {
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+/* stepSubTitle */
+.stepSubTitle {
+    font-size: .8rem;
+    color: #00000050;
+}

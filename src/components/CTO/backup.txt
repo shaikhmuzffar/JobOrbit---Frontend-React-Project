@@ -1,0 +1,132 @@
+<div class="CTOLeftBox">
+
+                    <div class="CTOLeftBoxUiBox_jobHolders">
+                        <span>20,000+ talented Job holders</span>
+                        <div class="CTOLeftBoxUiBox_jobHoldersImgGroup">
+                            <div class="CTOLeftBoxUiBox_jobHoldersImg">
+                                <img src={testimonial1} alt="" />
+                            </div>
+                            <div class="CTOLeftBoxUiBox_jobHoldersImg">
+                                <img src={testimonial1} alt="" />
+                            </div>
+                            <div class="CTOLeftBoxUiBox_jobHoldersImg">
+                                <img src={testimonial1} alt="" />
+                            </div>
+                            <div class="CTOLeftBoxUiBox_jobHoldersImg">
+                                <img src={testimonial1} alt="" />
+                            </div>
+                            <div class="CTOLeftBoxUiBox_jobHoldersImg">
+                                <img src={testimonial1} alt="" />
+                            </div>
+                            <div class="CTOLeftBoxUiBox_jobHoldersImg">
+                                <img src={testimonial1} alt="" />
+                            </div>
+                            <div class="CTOLeftBoxUiBox_jobHoldersImg">
+                                <img src={testimonial1} alt="" />
+                            </div>
+                            <div class="CTOLeftBoxUiBox_jobHoldersImg">
+                                <img src={testimonial1} alt="" />
+                            </div>
+                            <div class="CTOLeftBoxUiBox_jobHoldersImg">
+                                <img src={testimonial1} alt="" />
+                            </div>
+                            <div class="CTOLeftBoxUiBox_jobHoldersImg">
+                                <img src={testimonial1} alt="" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="CTOLeftBoxUiBox_Jobsearch">
+                        <span>search Job of your Interest</span>
+                        <a class="btn"><i class="ri-search-line"></i> </a>
+                    </div>
+                    <div class="CTOLeftBoxCircle">
+                    </div>
+                </div>
+
+
+
+
+
+
+
+============================ css left box ========================
+
+.CTOLeftBoxCircle {
+    /* position: absolute; */
+    top: -30px;
+    width: 380px;
+    height: 380px;
+    border-radius: 380px;
+    background: linear-gradient(to top, rgba(55, 56, 61, 0.007), rgba(55, 56, 61, 0.065));
+    z-index: 1;
+}
+
+/* .CTOLeftBoxUiBox_jobHolders */
+.CTOLeftBoxUiBox_jobHolders {
+    position: absolute;
+    top: 30px;
+    left: 50px;
+    width: 350px;
+    height: fit-content;
+    padding: 20px 40px;
+    padding-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    border-radius: 6px;
+    z-index: 10;
+    background-color: #fff;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+
+}
+
+.CTOLeftBoxUiBox_jobHolders>span {
+    font-size: .8rem;
+    color: #37383dd0;
+}
+
+.CTOLeftBoxUiBox_jobHoldersImgGroup {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.CTOLeftBoxUiBox_jobHoldersImg {
+    height: 40px;
+    width: 40px;
+    border-radius: 30px;
+    overflow: hidden;
+}
+
+.CTOLeftBoxUiBox_jobHoldersImg img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+/* CTOLeftBoxUiBox Jobsearch */
+.CTOLeftBoxUiBox_Jobsearch {
+    position: absolute;
+    top: 40px;
+    right: 50px;
+    z-index: 10;
+    padding: 1rem 1.2rem;
+    background-color: #fff;
+    font-size: .7rem;
+    width: 250px;
+    border-radius: 6px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.CTOLeftBoxUiBox_Jobsearch a {
+    position: absolute;
+    right: 5px;
+    top: -15px;
+    padding: unset;
+    font-size: .9rem;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    padding: 8px 9px;
+    font-weight: 500;
+} */

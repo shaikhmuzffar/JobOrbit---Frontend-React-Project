@@ -1,0 +1,89 @@
+.TestimonialsSection{
+    margin-block:8rem;
+}
+.testimonials{
+    display: flex;
+    gap: 2rem;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+}
+.testimonial{
+    display: flex;
+    border:1px solid #c2c2c22f;
+    gap: 2.5rem;
+    flex-direction: column;
+    width: 320px;
+    border-radius: 10px;
+    align-items: center;
+    padding: 1.5rem 2rem;
+    transition: all .3s ease-in-out;
+
+}
+.testimonial:hover{
+    box-shadow: 12px 12px 20px rgba(0,0,0,0.050);
+    transform: scale(1.01);
+    cursor: pointer;
+}
+.testimonialImg{
+    width: 80px;
+    height: 80px;
+}
+.testimonialImg img{
+    width: 100%;
+    height: 100%;
+}
+.testimonialMsg{
+    font-size: .8rem;
+    color: #454040;
+    opacity: .6;
+    text-align: center;
+    line-height: 160%;
+}
+
+.testimonialInfo{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    align-items: center;
+    color: #454040;
+}
+.testimonialName{
+    font-weight: 700;
+    font-size: 1rem;
+    padding-top: .6rem;
+    position: relative;
+}
+.testimonialName::after{
+    content: "";
+    position: absolute;
+    top:-20%;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 2px;
+    width: 50%;
+    background-color: #55BC7E;
+}
+.testimonialInfo .postion{
+    font-size: .7rem;
+    opacity: .7;
+}
+
+
+
+
+
+
+
+
+/* =================================== Media Qurries ======================================== */
+
+@media only screen and (max-width: 400px) {}
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (max-width: 600px) {}
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 768px) {}
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (max-width: 992px) {}
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (max-width: 1200px) {}

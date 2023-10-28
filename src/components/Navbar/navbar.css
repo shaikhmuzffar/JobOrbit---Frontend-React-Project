@@ -1,0 +1,179 @@
+.navbarSection{
+    width: 100%;
+    background-color: #ECF1F4;
+}
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 90px;
+}
+
+/*--------- logo ---------*/
+.logo {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.logo i {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #55BC7E;
+}
+
+/*--------- navbar ---------*/
+.navbar {
+    display: flex;
+    list-style: none;
+    gap: 2.2rem;
+    text-transform: capitalize;
+}
+
+.navItemlink {
+    position: relative;
+    font-size: .8rem;
+    color: #37383D;
+    font-weight: 500;
+    transition: all .3s ease-in-out;
+    cursor: pointer;
+}
+
+.navItemlink::after {
+    content: '';
+    height: 3px;
+    width: 50%;
+    background-color: #ff9066;
+    position: absolute;
+    bottom: -8px;
+    left: 50%;
+    transform: translate(-50%);
+    display: none;
+    transition: all .5s ease-in-out;
+}
+
+.navItemlink:hover::after,
+.navItemlink.active {
+    display: initial;
+
+}
+
+.navItemlink:hover,
+.navItemlink.active {
+    color: #ff9066;
+}
+.close{
+    display: none;
+}
+.close svg{
+    font-size: 1.6rem;
+    color: #454040;
+}
+
+
+/*--------- userActons ---------*/
+.userActions {
+    display: flex;
+    gap: 1.5rem;
+    text-transform: capitalize;
+}
+
+.userActions a {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    font-weight: 500;
+}
+
+.userActions span {
+    font-size: .8rem;
+    color: #37383D;
+}
+
+.userActions i {
+    font-size: 1.3rem;
+    color: #37383D;
+}
+.mobileMenuIcon{
+    display: none;
+}
+.mobileMenuIcon svg{
+    font-size: 1.4rem;
+    color: #454040;
+
+}
+
+@media only screen and (max-width: 400px) {
+    .userActions>a{
+        display: none;
+    }
+}
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (max-width: 600px) {}
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 768px) {
+    .navbar {
+        position: absolute;
+        top: 90px;
+        right: 30px;
+        display: none;
+        flex-direction: column;
+        height: fit-content;
+        width: 250px;
+        background-color: #fff;
+        padding: 1rem;
+        z-index: 1000;
+        border-radius: 10px;
+    }
+    .createAccount{
+        display: none;
+    }
+    .navbar.mobile{
+        display: flex;
+    }
+    .navbar li{
+        height: 40px;
+        padding-left: 20px;
+        border-radius: 6px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .navbar li:hover{
+        background-color: #55BC7E;
+    }
+    .navbar li:hover a{
+        color: #fff;
+    }
+    .navbar li>a{
+        display: list-item;
+        width: 100%;
+        font-size: 1.1rem !important;
+    }
+    .mobileMenuIcon{
+        display: flex;
+        align-items: center;
+    }
+    .close{
+        display: flex;
+        align-items: center;
+
+    }
+}
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (max-width: 992px) {
+    .userActions a span{
+        display:none;
+    }
+}
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (max-width: 1200px) {
+    .navbar {
+        gap: 1rem;
+    }
+    .userActions {
+        gap: 1rem;
+    }
+   
+
+}
